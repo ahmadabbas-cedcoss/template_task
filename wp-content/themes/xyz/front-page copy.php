@@ -6,7 +6,7 @@ get_header();
   <div class="container-fluid">
     <div class="owl-banner owl-carousel">
       <?php
-      $args = array(
+        $args = array(
         'post_type'=> 'post',
         'orderby'    => 'ID',
         'post_status' => 'publish',
@@ -37,8 +37,7 @@ if ( $result-> have_posts() ) : ?>
       </div>
     </div>
   <?php endwhile; ?>
-<?php endif;
-wp_reset_postdata(); ?>
+<?php endif; wp_reset_postdata(); ?>
 </div>
 </div>
 </div>
@@ -129,6 +128,11 @@ if ( $result-> have_posts() ) : ?>
 				</div>
 				<?php endwhile; ?>
 <?php endif; wp_reset_postdata(); ?>
+                <div class="col-lg-12">
+                  <div class="main-button">
+                    <a href="http://localhost:10004/blog-entries/">View All Posts</a>
+                  </div>
+                </div>
               </div>
             </div>
       </div>
@@ -216,20 +220,6 @@ if ( $result-> have_posts() ) : ?>
 </div>
 </div>
 </section>
-
-
-
-
-                <div class="col-lg-12">
-                  <ul class="page-numbers">
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">></a></li>
-                  </ul>
-                </div>
-
-
 
 <?php
 get_sidebar();

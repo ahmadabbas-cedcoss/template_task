@@ -15,7 +15,7 @@
  * the visitor has not yet entered the password we will
  * return early without loading the comments.
  */
-if ( post_password_required() ) {
+if(post_password_required()){
 	return;
 }
 ?>
@@ -45,7 +45,6 @@ if ( post_password_required() ) {
 			}
 			?>
 		</h2><!-- .comments-title -->
-
 		<?php the_comments_navigation(); ?>
 
 		<ol class="comment-list">
